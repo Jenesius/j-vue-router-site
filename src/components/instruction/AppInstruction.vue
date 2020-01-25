@@ -1,0 +1,46 @@
+<template>
+    <div class = "app-instruction">
+        <div class = "container">
+            <app-install></app-install>
+        </div>
+
+    </div>
+</template>
+
+<script>
+    import AppInstall from "./AppInstall";
+    export default {
+        name: "AppInstruction",
+        components: {AppInstall},
+        data: () => {
+            return {
+                test: "<img src = 'sfsdf' alt = '123'>"
+            }
+        }
+    }
+</script>
+
+<style>
+.app-instruction{
+    background-color: var(--white-2);
+
+    padding: 20px;
+}
+.app-instruction>.container{
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.instruction-title{
+    color:var(--black-1);
+    font-weight: 600;
+
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+.instruction-text{
+    color:var(--black-3);
+    font-size: 18px;
+
+}
+</style>
