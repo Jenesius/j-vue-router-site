@@ -166,24 +166,24 @@
         grid-area: header;
     }
     .desktop-body-map{
-        background-color: #e7e7e7;
+        background-color: var(--white-4);
         grid-area: map;
     }
     .desktop-body-setting{
         grid-area: setting;
-        background-color: #eae8f2;
+        background-color: var(--white-4);
     }
     .desktop-body-sub-block-1{
         grid-area: sub-block-1;
-        background-color: #ede9f6;
+        background-color: var(--white-4);
     }
     .desktop-body-sub-block-2{
         grid-area: sub-block-2;
-        background-color: #e1e6f1;
+        background-color: var(--white-4);
     }
     .desktop-body-footer{
         grid-area: footer;
-        background-color: #d4d3de;
+        background-color: var(--white-4);
     }
 
 </style>

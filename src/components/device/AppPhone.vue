@@ -115,16 +115,16 @@
         grid-area: header;
     }
     .phone-body-map{
-        background-color: #e7e7e7;
+        background-color: var(--white-4);
         grid-area: map;
     }
     .phone-body-sub-block-1{
         grid-area: sub-block-1;
-        background-color: #ede9f6;
+        background-color: var(--white-4);
     }
     .phone-body-sub-block-2{
         grid-area: sub-block-2;
-        background-color: #f1eaef;
+        background-color: var(--white-4);
     }
 
 </style>

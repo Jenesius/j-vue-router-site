@@ -117,20 +117,20 @@
         grid-area: header;
     }
     .tablet-body-map{
-        background-color: #e7e7e7;
+        background-color: var(--white-4);
         grid-area: map;
     }
     .tablet-body-setting{
-        background-color: #e7e7e7;
+        background-color: var(--white-4);
         grid-area: setting;
     }
     .tablet-body-sub-block-1{
         grid-area: sub-block-1;
-        background-color: #ede9f6;
+        background-color: var(--white-4);
     }
     .tablet-body-sub-block-2{
         grid-area: sub-block-2;
-        background-color: #f1eaef;
+        background-color: var(--white-4);
     }
 
 </style>
