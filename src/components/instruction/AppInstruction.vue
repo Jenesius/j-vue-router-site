@@ -31,6 +31,15 @@
     width: 100%;
     max-width: 1200px;
 }
+
+@media screen and (max-width: 1200px){
+    .app-instruction>.container{
+        margin: auto;
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
 .instruction-title{
     color:var(--black-1);
     font-weight: 600;

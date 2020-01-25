@@ -27,6 +27,17 @@
 body{
     margin: 0;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    overflow: auto; /* добавить полосу прокрутки */
+}
+
 .social-ico{
     background-color: red;
 }

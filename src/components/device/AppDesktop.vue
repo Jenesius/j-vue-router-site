@@ -73,6 +73,10 @@
 
     box-shadow: var(--shadow-1);
 }
+
+
+
+
     .app-device-desktop-header{
 
         display: flex;
@@ -106,7 +110,7 @@
         background-color: #ffe900;
     }
     .app-device-desktop-body{
-        height: 100%;
+        flex-grow: 1;
 
 
         padding: 10px;
@@ -185,5 +189,67 @@
         grid-area: footer;
         background-color: var(--white-4);
     }
+@media screen and (max-width: 1200px){
+    .app-device-desktop{
+        top:21%;
 
+        height: 170px;
+        width: 300px;
+    }
+    .app-device-desktop-header{
+
+        display: flex;
+        flex-flow: row nowrap;
+
+        height: 30px;
+        background-color: var(--white-3);
+    }
+    .app-device-desktop-body{
+        padding: 5px;
+        grid-gap: 5px;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        transition: .3s;
+
+        grid-template-areas:
+                "header setting setting map"
+                "header sub-block-1 sub-block-2 map"
+                "header footer footer footer"
+    ;
+    }
+    .desktop-body-header{
+        width: auto;
+    }
+    .desktop-body-animation{
+        padding: 20px;
+    }
+    .desktop-body-animation>.desktop-body-header{
+        opacity: 0.4;
+        transform: none;
+        transition-delay: 1s;
+
+    }
+    .desktop-body-animation>.desktop-body-map{
+        transition-delay: 1s ;
+        transform: none;
+    }
+    .desktop-body-animation>.desktop-body-setting{
+        transition-delay: 1s;
+        transform: none;
+    }
+    .desktop-body-animation>.desktop-body-sub-block-1{
+        transition-delay: 1s;
+        transform: none;
+    }
+    .desktop-body-animation>.desktop-body-sub-block-2{
+        transition-delay: 1s;
+        transform: none;
+    }
+    .desktop-body-animation>.desktop-body-footer{
+        transition-delay: 1s;
+        transform: none;
+    }
+}
 </style>

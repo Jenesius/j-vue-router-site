@@ -36,6 +36,7 @@
 
 
     }
+
     .app-main-animation-container{
         height: 100%;
         width: 100%;
@@ -46,5 +47,20 @@
         max-width: 1080px;
         min-width: 900px;
         min-height: 590px;
+    }
+    @media screen and (max-width: 1200px){
+
+        .app-main-animation{
+
+            padding: 10% 15px;
+        }
+
+        .app-main-animation-container{
+
+            max-width: 90%;
+            min-width: 300px;
+            min-height: 390px;
+            max-height: 75%;
+        }
     }
 </style>

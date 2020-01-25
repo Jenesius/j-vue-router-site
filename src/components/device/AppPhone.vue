@@ -30,10 +30,7 @@
         opacity: 0.7;
 
         position: absolute;
-
-        left: 0%;
-
-
+        left: 0;
         bottom: 0;
 
         margin: auto;
@@ -64,11 +61,10 @@
         height: 40px;
         background-color: var(--white-3);
     }
-        .phone-button-navigation{
-            width: 45px;
-            padding: 7px;
-
-        }
+    .phone-button-navigation{
+        width: 45px;
+        padding: 7px;
+    }
     .phone-button-navigation>span{
         background-color: #bfbfbf5e;
         flex-grow: 1;
@@ -126,5 +122,31 @@
         grid-area: sub-block-2;
         background-color: var(--white-4);
     }
+    @media screen and (max-width: 1200px){
+        .app-device-phone{
+            height: 180px;
+            width: 90px;
 
+        }
+        .app-device-phone-body{
+
+            grid-template-rows: 1fr 3fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5px;
+
+            padding: 5px;
+
+            grid-template-areas:
+                    "header none"
+                    "map map"
+                    "sub-block-1 sub-block-2"
+        ;
+
+        }
+        .app-device-phone-header{
+
+            height: 30px;
+
+        }
+    }
 </style>

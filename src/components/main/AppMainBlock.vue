@@ -26,7 +26,7 @@
 <style scoped>
     .block-main{
         position: relative;
-        height: 100vh;
+        min-height: 100%;
     }
 
     .block-main-header{
@@ -40,7 +40,10 @@
 
         position: absolute;
 
-        top:50px
+        top:50px;
+
+        padding: 0 15px;
+        text-align: center;
     }
     .block-main-header>h1{
         font-weight: 600;
@@ -71,6 +74,31 @@
     .block-main-social>img{
         height: 25px;
         margin: 8px 0;
+    }
+    @media screen and (max-width: 800px){
+        .block-main-social{
+            left:0;
+            right:0;
+            top: auto;
+            bottom: 10px;
+
+            position: absolute;
+
+            margin: auto;
+
+            flex-flow: row nowrap;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: max-content;
+            padding: 0 10px;
+        }
+        .block-main-social>img{
+            height: 25px;
+            margin: 8px 8px;
+        }
     }
 
 </style>

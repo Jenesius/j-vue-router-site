@@ -19,6 +19,7 @@
         flex-grow: 1;
 
     }
+
     .desktop-search-panel-input{
         background-color: var(--sub-white-1);
 

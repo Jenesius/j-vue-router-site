@@ -132,5 +132,33 @@
         grid-area: sub-block-2;
         background-color: var(--white-4);
     }
+    @media screen and (max-width: 1200px){
+        .app-device-tablet{
+            height: 120px;
+            width: 180px;
+        }
+        .app-device-tablet-body{
 
+
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 5px;
+
+
+            grid-template-areas:
+                    "header header header"
+                    "map sub-block-1 setting"
+                    "map sub-block-2 setting"
+        ;
+
+            padding: 5px;
+
+        }
+        .app-device-tablet-header{
+
+
+            height: 30px;
+
+        }
+    }
 </style>

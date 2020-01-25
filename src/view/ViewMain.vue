@@ -3,6 +3,7 @@
         <app-main-block/>
         <app-instruction/>
         <app-footer/>
+
     </div>
 </template>
 
@@ -14,6 +15,11 @@
     export default {
         name: "ViewMain",
         components: {AppFooter, AppInstruction, AppMainBlock},
+        data: () => {
+            return {
+
+            }
+        }
 
     }
 </script>
