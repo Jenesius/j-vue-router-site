@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Sans",Arial,sans-serif;
+    font-weight: normal;
+
+    --black-1:#101010;
+    --black-2:#212121;
+    --black-3:#323232;
+    --black-4:#424242;
+
+    --white-1:#fff;
+    --sub-white-1: #fdfdfd;
+    --white-2: #f8f8f8;
+    --white-3: #f2f2f2;
+    --white-4: #eaeaea;
+    --white-5: #dfdfdf;
+
+    --extra-slow:0.5s;
+    --slow:0.5s;
+    --medium:0.3s;
+    --fast:0.2s;
+    --extra-fast:0.1s;
+
+    --gray-1: #828282;
+    --shadow-1: 0 1px 2px rgba(76, 76, 76, 0.07), 0 1px 2px rgba(189, 189, 189, 0.15);
+
+
+    --red:#f91907;
+    --sub-red: #d41385;
+    --orange:rgba(255, 150, 16, 0.88);
+    --purple:#7e1fcc;
+    --green:#32b92c;
+    --gray:#5d5757;
+    --yellow:#ffe900;
+    --blue: #437bff;
+
+}
+
+.color-red{
+    color:var(--red);
+}
+.color-sub-red{
+    color:var(--sub-red);
+}
+.color-orange{
+    color:var(--orange);
+}
+.color-purple{
+    color: var(--purple);
+}
+.color-green{
+    color: var(--green);
+}
+.color-gray{
+    color: var(--gray);
+}
+.color-yellow{
+    color:var(--yellow);
+}
+.color-blue{
+    color:var(--blue);
+}
+
+
+.back-color-red{
+    background-color:var(--red);
+}
+.back-color-orange{
+    background-color:var(--orange);
+}
+.back-color-purple{
+    background-color: var(--purple);
+}
+.back-color-green{
+    background-color:var(--green);
+}
+.back-color-gray{
+    background-color: var(--gray);
+}
+.back-color-yellow{
+    background-color: var(--yellow);
+}
+.back-color-blue{
+    color:var(--blue);
+}
+
+
+
+body{
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    overflow: auto; /* добавить полосу прокрутки */
+}
+
+.social-ico{
+    background-color: red;
+}
+
+p,pre{
+    margin: 0;
+}
+
+@font-face {
+
+font-family: "Sans";
+
+src: url("../fonts/ProductSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
