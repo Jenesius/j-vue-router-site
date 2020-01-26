@@ -8,8 +8,8 @@
 
         <div class = "block-main-social">
 
-            <img src = "../../assets/img/ico/social/vk.svg" alt = "vk.com">
-            <img src = "../../assets/img/ico/social/instagram.svg" alt = "instagram.com">
+            <a href = "https://vk.com/jenesius"><img src = "../../assets/img/ico/social/vk.svg" alt = "vk.com"></a>
+            <a href = "https://www.instagram.com/jenesius69/"><img src = "../../assets/img/ico/social/instagram.svg" alt = "instagram.com"></a>
 
         </div>
     </div>
@@ -66,7 +66,7 @@
 
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     }
-    .block-main-social>img{
+    .block-main-social img{
         height: 25px;
         margin: 8px 0;
     }

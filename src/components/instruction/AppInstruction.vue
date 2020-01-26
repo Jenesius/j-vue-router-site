@@ -3,7 +3,6 @@
         <div class = "container">
             <app-install></app-install>
         </div>
-
     </div>
 </template>
 
@@ -46,11 +45,13 @@
 
     font-size: 27px;
     letter-spacing: 1px;
+    margin: 36px 0 13px 0;
 }
 .instruction-text{
     color:var(--black-3);
     font-size: 18px;
 
+    margin-bottom: 8px;
 }
     .app-instruction .tag{
         display: flex;
@@ -59,13 +60,16 @@
         letter-spacing: 1px;
 
         border-radius: 6px;
-        margin: 7px 0;
+        margin: 13px 0;
+
+        overflow-x: auto;
 
     }
     .app-instruction .tag span{
         line-height: 30px;
     }
     .app-instruction .tag>code{
+        padding-right: 30px;
 
     }
 </style>
