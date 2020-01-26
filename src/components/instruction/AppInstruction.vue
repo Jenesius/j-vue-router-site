@@ -52,4 +52,20 @@
     font-size: 18px;
 
 }
+    .app-instruction .tag{
+        display: flex;
+        background-color: #1b062d;
+        color:var(--sub-white-1);
+        letter-spacing: 1px;
+
+        border-radius: 6px;
+        margin: 7px 0;
+
+    }
+    .app-instruction .tag span{
+        line-height: 30px;
+    }
+    .app-instruction .tag>code{
+
+    }
 </style>

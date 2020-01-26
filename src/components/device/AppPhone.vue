@@ -1,17 +1,16 @@
 <template>
-    <div class = "app-device-phone">
-        <div class = "app-device-phone-header">
+    <div class = "app-main-animation-device app-device-phone">
+        <div class = "app-main-animation-device-header">
             <app-device-search-panel/>
             <div class = "phone-button-navigation">
-                <span></span>
+                <span/>
             </div>
         </div>
-        <div class = "app-device-phone-body">
-            <div class = "phone-body-header"></div>
-            <div class = "phone-body-map"></div>
-            <div class = "phone-body-setting"></div>
-            <div class = "phone-body-sub-block-1"></div>
-            <div class = "phone-body-sub-block-2"></div>
+        <div class = "app-main-animation-device-body app-device-phone-body">
+            <div class = "app-main-animation-body-header phone-body-header"></div>
+            <div class = "app-main-animation-body-map"></div>
+            <div class = "app-main-animation-body-sub-block-1"></div>
+            <div class = "app-main-animation-body-sub-block-2"></div>
         </div>
     </div>
 </template>
@@ -26,126 +25,66 @@
 
 <style scoped>
     .app-device-phone{
-
         opacity: 0.7;
 
-        position: absolute;
         left: 0;
         bottom: 0;
 
-        margin: auto;
+        height: 70%;
+        width: 25%;
 
-        overflow: hidden;
-
-        display: flex;
-        flex-flow: column nowrap;
-
-
-        height: 400px;
-        width: 230px;
-
-        background-color: var(--sub-white-1);
-
-        border: 3px solid var(--white-3);
-        border-radius: 16px;
-
-
-        box-shadow: var(--shadow-1);
-    }
-
-    .app-device-phone-header{
-
-        display: flex;
-        flex-flow: row nowrap;
-
-        height: 40px;
-        background-color: var(--white-3);
+        z-index: 0;
+    ;
     }
     .phone-button-navigation{
         width: 45px;
         padding: 7px;
     }
     .phone-button-navigation>span{
-        background-color: #bfbfbf5e;
-        flex-grow: 1;
+        display: block;
+
+        height: 100%;
 
         opacity: 0.75;
 
-        height: 100%;
-        width: 100%;
-
-        display: block;
-
+        background-color: var(--white-5);
         border-radius: 8px;
     }
     .app-device-phone-body{
-
-        flex-grow: 1;
-
-        display: grid;
-
         grid-template-rows: 60px 1fr 120px;
         grid-template-columns: 60px 1fr;
-        grid-gap: 10px;
-
         grid-template-areas:
         "header none"
         "map map"
-        "sub-block-1 sub-block-2"
-        ;
-
-        padding: 10px;
-
-        transition: 0.3s;
+        "sub-block-1 sub-block-2";
     }
-    .app-device-phone-body>div{
+    .app-device-phone-body{
+        grid-template-rows: 60px 1fr 1fr;
+        grid-template-columns: 60px 1fr 70px;
 
-        transition: .3s;
-
-        opacity: 0.7;
-        border-radius: 7px;
+        grid-template-areas:
+                "header none none"
+                "map map map"
+                "sub-block-1 sub-block-1 sub-block-2 ";
     }
+
     .phone-body-header{
+        background-color: var(--purple);
+    }
 
-        background-color: #c483ff;
-        grid-area: header;
-    }
-    .phone-body-map{
-        background-color: var(--white-4);
-        grid-area: map;
-    }
-    .phone-body-sub-block-1{
-        grid-area: sub-block-1;
-        background-color: var(--white-4);
-    }
-    .phone-body-sub-block-2{
-        grid-area: sub-block-2;
-        background-color: var(--white-4);
-    }
+
+
     @media screen and (max-width: 1200px){
-        .app-device-phone{
-            height: 180px;
-            width: 90px;
 
-        }
         .app-device-phone-body{
 
             grid-template-rows: 1fr 3fr 1fr;
             grid-template-columns: 1fr 1fr;
-            grid-gap: 5px;
-
-            padding: 5px;
 
             grid-template-areas:
                     "header none"
                     "map map"
-                    "sub-block-1 sub-block-2"
-        ;
-
-        }
-        .app-device-phone-header{
-
-            height: 30px;
+                    "sub-block-1 sub-block-2";
 
         }
     }

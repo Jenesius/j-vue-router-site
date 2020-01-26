@@ -1,5 +1,5 @@
 <template>
-    <div class = "main">
+    <div class = "app-main">
         <app-main-block/>
         <app-instruction/>
         <app-footer/>
@@ -25,5 +25,7 @@
 </script>
 
 <style >
-
+.app-main{
+    height: 100%;
+}
 </style>

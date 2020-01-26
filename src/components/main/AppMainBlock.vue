@@ -30,19 +30,14 @@
     }
 
     .block-main-header{
-        height: 160px;
-        width: 100%;
-
         display: flex;
         justify-content: center;
         align-items: center;
         flex-flow: column nowrap;
 
-        position: absolute;
+        width: 100%;
 
-        top:50px;
-
-        padding: 0 15px;
+        padding: 50px 15px;
         text-align: center;
     }
     .block-main-header>h1{
@@ -75,22 +70,41 @@
         height: 25px;
         margin: 8px 0;
     }
+
+    @media screen and (min-width: 1200px) {
+        .block-main{
+            min-height: 900px;
+        }
+    }
+    @media screen and (max-width: 1200px) and (min-width: 930px){
+        .block-main{
+            min-height: 800px;
+        }
+    }
+
+    @media screen and (max-width: 930px) and (min-width: 800px){
+        .block-main{
+            min-height: 730px;
+        }
+    }
     @media screen and (max-width: 800px){
+        .block-main{
+            min-height: 100%;
+            min-height: 530px;
+        }
+    }
+
+    @media screen and (max-width: 800px){
+
+
+
         .block-main-social{
             left:0;
             right:0;
             top: auto;
             bottom: 10px;
 
-            position: absolute;
-
-            margin: auto;
-
             flex-flow: row nowrap;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
             width: max-content;
             padding: 0 10px;

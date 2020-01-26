@@ -1,17 +1,17 @@
 <template>
-    <div class = "app-device-tablet">
-        <div class = "app-device-tablet-header">
+    <div class = "app-main-animation-device app-device-tablet">
+        <div class = "app-main-animation-device-header">
             <app-device-search-panel/>
             <div class = "tablet-button-navigation">
                 <span></span>
             </div>
         </div>
-        <div class = "app-device-tablet-body">
-            <div class = "tablet-body-header"></div>
-            <div class = "tablet-body-map"></div>
-            <div class = "tablet-body-setting"></div>
-            <div class = "tablet-body-sub-block-1"></div>
-            <div class = "tablet-body-sub-block-2"></div>
+        <div class = "app-main-animation-device-body app-device-tablet-body">
+            <div class = "app-main-animation-body-header tablet-body-header"></div>
+            <div class = "app-main-animation-body-map"></div>
+            <div class = "app-main-animation-body-setting"></div>
+            <div class = "app-main-animation-body-sub-block-1"></div>
+            <div class = "app-main-animation-body-sub-block-2"></div>
         </div>
     </div>
 </template>
@@ -27,138 +27,56 @@
 
 <style scoped>
     .app-device-tablet{
-
-        z-index: 0;
         opacity: 0.7;
 
-        position: absolute;
+        z-index: 0;
 
         right: 0;
-
-
         bottom: 0;
 
-        margin: auto;
-
-        overflow: hidden;
-
-        display: flex;
-        flex-flow: column nowrap;
-
-
-        height: 330px;
-        width: 500px;
-
-        background-color: var(--sub-white-1);
-
-        border: 3px solid var(--white-3);
-        border-radius: 16px;
-
-
-        box-shadow: var(--shadow-1);
+        height: 53%;
+        width: 47%;
     }
 
-    .app-device-tablet-header{
-
-        display: flex;
-        flex-flow: row nowrap;
-
-        height: 40px;
-        background-color: var(--white-3);
-    }
     .tablet-button-navigation{
         width: 45px;
         padding: 7px;
 
     }
     .tablet-button-navigation>span{
-        background-color: #bfbfbf5e;
-        flex-grow: 1;
-
-        opacity: 0.75;
-
-        height: 100%;
-        width: 100%;
-
         display: block;
 
+        height: 100%;
+
+        background-color: var(--white-5);
+
+        opacity: 0.75;
         border-radius: 8px;
     }
     .app-device-tablet-body{
-
-        flex-grow: 1;
-
-        display: grid;
-
         grid-template-rows: 60px 1fr 1fr;
         grid-template-columns: 1fr 70px 100px;
-        grid-gap: 10px;
 
         grid-template-areas:
                 "header header header"
                 "map sub-block-1 setting"
-                "map sub-block-2 setting"
-    ;
+                "map sub-block-2 setting";
+    }
 
-        padding: 10px;
+    .tablet-body-header {
+        background-color: var(--orange);
+    }
 
-        transition: 0.3s;
-    }
-    .app-device-tablet-body>div{
-
-        transition: .3s;
-
-        opacity: 0.7;
-        border-radius: 7px;
-    }
-    .tablet-body-header{
-
-        background-color: #ffa500d1;
-        grid-area: header;
-    }
-    .tablet-body-map{
-        background-color: var(--white-4);
-        grid-area: map;
-    }
-    .tablet-body-setting{
-        background-color: var(--white-4);
-        grid-area: setting;
-    }
-    .tablet-body-sub-block-1{
-        grid-area: sub-block-1;
-        background-color: var(--white-4);
-    }
-    .tablet-body-sub-block-2{
-        grid-area: sub-block-2;
-        background-color: var(--white-4);
-    }
     @media screen and (max-width: 1200px){
-        .app-device-tablet{
-            height: 120px;
-            width: 180px;
-        }
         .app-device-tablet-body{
-
-
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 5px;
-
 
             grid-template-areas:
                     "header header header"
                     "map sub-block-1 setting"
-                    "map sub-block-2 setting"
-        ;
-
-            padding: 5px;
-
+                    "map sub-block-2 setting";
         }
-        .app-device-tablet-header{
 
-
-            height: 30px;
-
-        }
     }
 </style>

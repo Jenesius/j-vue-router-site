@@ -1,0 +1,71 @@
+
+.app-main-animation-device{
+    display: flex;
+    flex-flow: column nowrap;
+
+    position: absolute;
+
+    margin: auto;
+    border: 3px solid var(--white-3);
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    background-color: var(--sub-white-1);
+    box-shadow: var(--shadow-1);
+}
+.app-main-animation-device-header{
+    display: flex;
+    flex-flow: row nowrap;
+
+    height: 40px;
+    background-color: var(--white-3);
+}
+.app-main-animation-device-body{
+    display: grid;
+    grid-gap: 10px;
+
+    flex-grow: 1;
+
+    padding: 10px;
+
+    transition: var(--medium);
+}
+.app-main-animation-device-body>div{
+    border-radius: 7px;
+
+    background-color: var(--white-4);
+    opacity: 0.7;
+
+    transition: var(--medium);
+}
+.app-main-animation-body-header{
+    grid-area: header;
+}
+.app-main-animation-body-map{
+    grid-area: map;
+}
+.app-main-animation-body-setting{
+    grid-area: setting;
+}
+.app-main-animation-body-sub-block-1{
+    grid-area: sub-block-1;
+}
+.app-main-animation-body-sub-block-2{
+    grid-area: sub-block-2;
+}
+.app-main-animation-body-footer{
+    grid-area: footer;
+}
+
+
+@media screen and (max-width: 1200px){
+    .app-main-animation-device-header{
+        height: 30px;
+    }
+    .app-main-animation-device-body{
+        grid-gap: 5px;
+        padding: 5px;
+    }
+
+}
