@@ -109,7 +109,7 @@
             width: max-content;
             padding: 0 10px;
         }
-        .block-main-social>img{
+        .block-main-social img{
             height: 25px;
             margin: 8px 8px;
         }
